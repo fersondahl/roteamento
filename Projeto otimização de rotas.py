@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Tue Mar 15 03:29:00 2022
 
-@author: ferna
+@author: ferna söndahl
 """
 
 ##### Distribuição de serviços
@@ -21,8 +21,6 @@ import requests
 import zipfile
 from io import BytesIO
 import time
-
-
 
 # %%
 
@@ -62,8 +60,6 @@ tst = list(dist_df['origem'].drop_duplicates())
 for local in tst:
     dist2_df[str(local)] = list(dist_df.query(f'origem == {local}')['Distancia'])
     
-
-
 # %%
 
 ciclo = []
